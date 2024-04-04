@@ -561,30 +561,38 @@ video {
   margin-right: -1.5rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .-mt-6 {
   margin-top: -1.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .table {
@@ -607,22 +615,24 @@ video {
   list-style-position: inside;
 }
 
-.list-disc {
-  list-style-type: disc;
+.list-outside {
+  list-style-position: outside;
 }
 
 .list-decimal {
   list-style-type: decimal;
 }
 
-.place-content-center {
-  place-content: center;
+.list-disc {
+  list-style-type: disc;
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+.list-none {
+  list-style-type: none;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -643,44 +653,19 @@ video {
   border-bottom-width: 2px;
 }
 
-.bg-red-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-}
-
-.bg-rose-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 164 175 / var(--tw-bg-opacity));
-}
-
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
 .bg-rose-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 228 230 / var(--tw-bg-opacity));
 }
 
-.bg-rose-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 205 211 / var(--tw-bg-opacity));
-}
-
 .bg-rose-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 241 242 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-5 {
@@ -704,24 +689,16 @@ video {
   padding-left: 0.5rem;
 }
 
-.font-\[\'\'\] {
-  font-family: '';
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
 .font-\[\'Young_Serif\'\] {
   font-family: 'Young Serif';
-}
-
-.font-\[\] {
-  font-family: ;
-}
-
-.font-\[Yound\] {
-  font-family: Yound;
-}
-
-.font-\[Young_\] {
-  font-family: Young;
 }
 
 .text-3xl {
@@ -747,10 +724,6 @@ video {
   font-weight: 400;
 }
 
-.font-\[Young_Serif\] {
-  font-weight: Young Serif;
-}
-
 .font-semibold {
   font-weight: 600;
 }
@@ -770,33 +743,101 @@ video {
   color: rgb(127 29 29 / var(--tw-text-opacity));
 }
 
-.text-red-950 {
-  --tw-text-opacity: 1;
-  color: rgb(69 10 10 / var(--tw-text-opacity));
+.marker\:ml-2 *::marker {
+  margin-left: 0.5rem;
 }
 
-.text-rose-300 {
-  --tw-text-opacity: 1;
-  color: rgb(253 164 175 / var(--tw-text-opacity));
+.marker\:ml-5 *::marker {
+  margin-left: 1.25rem;
+}
+
+.marker\:mr-2 *::marker {
+  margin-right: 0.5rem;
+}
+
+.marker\:bg-rose-50 *::marker {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 241 242 / var(--tw-bg-opacity));
+}
+
+.marker\:align-middle *::marker {
+  vertical-align: middle;
+}
+
+.marker\:font-semibold *::marker {
+  font-weight: 600;
+}
+
+.marker\:font-bold *::marker {
+  font-weight: 700;
+}
+
+.marker\:text-rose-50 *::marker {
+  color: rgb(255 241 242 );
+}
+
+.marker\:text-red-50 *::marker {
+  color: rgb(254 242 242 );
+}
+
+.marker\:text-red-900 *::marker {
+  color: rgb(127 29 29 );
+}
+
+.marker\:ml-2::marker {
+  margin-left: 0.5rem;
+}
+
+.marker\:ml-5::marker {
+  margin-left: 1.25rem;
+}
+
+.marker\:mr-2::marker {
+  margin-right: 0.5rem;
+}
+
+.marker\:bg-rose-50::marker {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 241 242 / var(--tw-bg-opacity));
+}
+
+.marker\:align-middle::marker {
+  vertical-align: middle;
+}
+
+.marker\:font-semibold::marker {
+  font-weight: 600;
+}
+
+.marker\:font-bold::marker {
+  font-weight: 700;
+}
+
+.marker\:text-rose-50::marker {
+  color: rgb(255 241 242 );
+}
+
+.marker\:text-red-50::marker {
+  color: rgb(254 242 242 );
+}
+
+.marker\:text-red-900::marker {
+  color: rgb(127 29 29 );
 }
 
 @media (min-width: 640px) {
-  .sm\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .sm\:mt-0 {
-    margin-top: 0px;
+  .sm\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
-  .sm\:rounded {
-    border-radius: 0.25rem;
+  .sm\:mt-0 {
+    margin-top: 0px;
   }
 
   .sm\:rounded-lg {
@@ -808,17 +849,103 @@ video {
   }
 }
 
-@media (min-width: 768px) {
-  .md\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
+.\[\&_li\]\:mr-4 li {
+  margin-right: 1rem;
+}
 
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
+.\[\&_li\]\:ml-4 li {
+  margin-left: 1rem;
+}
 
-  .md\:rounded {
-    border-radius: 0.25rem;
-  }
+.\[\&_li\]\:block li {
+  display: block;
+}
+
+.\[\&_li\]\:flex li {
+  display: flex;
+}
+
+.\[\&_li\]\:items-center li {
+  align-items: center;
+}
+
+.\[\&_li\]\:before\:mr-2 li::before {
+  content: var(--tw-content);
+  margin-right: 0.5rem;
+}
+
+.\[\&_li\]\:before\:block li::before {
+  content: var(--tw-content);
+  display: block;
+}
+
+.\[\&_li\]\:before\:h-2 li::before {
+  content: var(--tw-content);
+  height: 0.5rem;
+}
+
+.\[\&_li\]\:before\:h-1 li::before {
+  content: var(--tw-content);
+  height: 0.25rem;
+}
+
+.\[\&_li\]\:before\:w-2 li::before {
+  content: var(--tw-content);
+  width: 0.5rem;
+}
+
+.\[\&_li\]\:before\:w-1 li::before {
+  content: var(--tw-content);
+  width: 0.25rem;
+}
+
+.\[\&_li\]\:before\:rounded-full li::before {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.\[\&_li\]\:before\:bg-red-900 li::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
+.\[\&_li\]\:before\:content-\[\] li::before {
+  --tw-content: ;
+  content: var(--tw-content);
+}
+
+.\[\&_li\]\:before\:content-\[\"\"\] li::before {
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.\[\&_li\]\:before\:content-\[\'\'\] li::before {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.\[\&_li\]\:before\:content-\[\'\*\'\] li::before {
+  --tw-content: '*';
+  content: var(--tw-content);
+}
+
+.\[\&_li\]\:before\:content-\[counter\] li::before {
+  --tw-content: counter;
+  content: var(--tw-content);
+}
+
+.\[\&_li\]\:before\:content-\[counter\(\)\] li::before {
+  --tw-content: counter();
+  content: var(--tw-content);
+}
+
+.\[\&_li\]\:before\:content-\[\'counter\(\)\'\] li::before {
+  --tw-content: 'counter()';
+  content: var(--tw-content);
+}
+
+.\[\&_li\]\:before\:content-\[\'counter\(custom-mark\)\'\] li::before {
+  --tw-content: 'counter(custom-mark)';
+  content: var(--tw-content);
 }
